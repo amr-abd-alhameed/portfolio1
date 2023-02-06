@@ -18,10 +18,11 @@ function App() {
       <ThemeProvider theme={theme}>
         <Router>
           <Header />
-          <Routes>
+          <Home />
+          {/* <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/Exp" element={<Exp />} /> */}
-          </Routes>
+          
+          </Routes> */}
           <About />
           <Exp />
           <Projects />
