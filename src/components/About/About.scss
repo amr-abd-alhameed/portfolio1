@@ -1,0 +1,65 @@
+@import "../../sass/_variables.scss";
+@import "../../sass/mixins";
+@import "../../sass/breakPoints";
+
+.about {
+    background-image: url(../../assets/images/pexels-henry-&-co-1939485.jpg);
+    background-size: cover;
+    // background: url(../../assets/images/pexels-henry-&-co-1939485.jpg) top
+    //     right/cover no-repeat;
+
+    @include padding;
+    text-align: center;
+    position: relative;
+
+    .container {
+        position: relative;
+        z-index: 2;
+        @include flex;
+        flex-direction: column;
+        gap: 50px;
+        .one {
+            margin-top: 40px;
+            p {
+                font-weight: 500;
+            }
+        }
+        .two {
+            p {
+                line-height: 1.6;
+            }
+        }
+
+        .three {
+            @include flex;
+            gap: 20px;
+        }
+
+        @include media("<lg") {
+            p {
+                font-size: 24px;
+            }
+        }
+        @include media("<tablet") {
+            p {
+                font-size: 20px;
+            }
+            button {
+                font-size: 15px;
+                padding: 7px 33px;
+            }
+        }
+        @include media("<phone") {
+            p {
+                font-size: 18px;
+            }
+            .three {
+                flex-direction: column;
+                button {
+                    font-size: 14px;
+                    padding: 6px 30px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+@import "../..//sass/mixins";
+@import "../..//sass/breakPoints";
+.Contact {
+    min-height: 50vh;
+    padding: 60px 0px 60px;
+    position: relative;
+    img {
+        transform: translateY(-29%);
+        position: absolute;
+        left: 0%;
+        max-width: 450px;
+    }
+
+    .Left {
+        width: 40%;
+    }
+
+    .Right {
+        @include flex;
+        flex-direction: column;
+        gap: 40px;
+        width: 60%;
+    }
+
+    @include media("<lg") {
+        & {
+            img {
+                max-width: 350px;
+            }
+            .Right {
+                h1 {
+                    font-size: 28px;
+                }
+                p {
+                    font-size: 23px;
+                }
+                button {
+                    font-size: 20px;
+                    padding: 9px 17px;
+                }
+            }
+        }
+    }
+
+    @include media("<tablet") {
+        & {
+            img {
+                max-width: 250px;
+            }
+            .Right {
+                h1 {
+                    font-size: 22px;
+                }
+                p {
+                    font-size: 18px;
+                }
+                button {
+                    font-size: 16px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+
+    @include media("<phone") {
+        & {
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column-reverse;
+            min-height: 90vh;
+
+            .Left {
+                margin-top: -25px;
+            }
+
+            img {
+                max-width: 250px;
+                transform: translate(-50%, 22%);
+                left: 50%;
+            }
+            .Right {
+                width: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@import "../../../sass/mixins";
+@import "../../../sass/variables";
+@import "../../../sass/breakPoints";
+
+.icons {
+    @include flex;
+    z-index: 1;
+
+    a {
+        color: $secondary;
+        background-color: $primary;
+        font-size: 25px;
+        position: absolute;
+        width: 50px;
+        left: 45%;
+        height: 50px;
+        border: 1px solid #f4f4f4;
+        border-radius: 50%;
+        @include flex;
+        cursor: pointer;
+
+        &:hover {
+            color: $primary;
+            background-color: $secondary;
+        }
+    }
+
+    .one {
+        transform: translate(362%, -300%);
+    }
+
+    .two {
+        transform: translate(462%, -150%);
+    }
+
+    .three {
+        transform: translate(492%, 30%);
+    }
+    .four {
+        transform: translate(442%, 200%);
+    }
+
+    @include media(">LGdesktop") {
+        a {
+            left: 47%;
+        }
+    }
+
+    @include media(">desktop") {
+        a {
+            left: 46%;
+        }
+    }
+
+    @include media("<lg") {
+        a {
+            left: 45%;
+            font-size: 22px;
+            position: absolute;
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    @include media("<tablet") {
+        a {
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            left: 38%;
+        }
+    }
+    @include media("<phone") {
+        a {
+            width: 17px;
+            height: 17px;
+            font-size: 7px;
+            left: 46%;
+        }
+    }
+}

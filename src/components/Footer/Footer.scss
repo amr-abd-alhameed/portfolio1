@@ -1,0 +1,12 @@
+@import "../../sass/variables";
+@import "../../sass/mixins";
+@import "../../sass/fonts";
+
+.Footer {
+    color: $secondary;
+    background-color: $primary;
+    @include flex;
+    height: 100px;
+    text-transform: capitalize;
+    font-family: $poppins;
+}

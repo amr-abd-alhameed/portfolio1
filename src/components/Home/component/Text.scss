@@ -1,0 +1,201 @@
+@import "../../../sass/mixins";
+@import "../../../sass/fonts";
+@import "../../../sass/variables";
+@import "../../../sass/breakPoints";
+
+.text {
+    @include position;
+    top: 42% !important;
+    font-family: $volkhov;
+    text-transform: capitalize;
+    transform: translate(-50%, -50%);
+    color: $secondary-alt;
+    width: 840px;
+
+    .info-right {
+        @include jacket;
+        padding: 5px 10px;
+
+        em {
+            @include em;
+        }
+        span {
+            color: $secondary-alt;
+            font-size: 15px;
+        }
+    }
+
+    .me {
+        @include margin-auto;
+        width: 768px;
+        @include flex;
+        justify-content: space-between !important;
+        color: $secondary;
+
+        .one {
+            margin-bottom: 0px;
+            color: $secondary-alt;
+            font-size: 18px;
+        }
+        .two {
+            font-weight: 400;
+            font-size: 28px;
+        }
+    }
+
+    .job {
+        width: 900px;
+        @include flex;
+        @include margin-auto;
+        justify-content: space-between !important;
+        margin-top: 70px;
+        p {
+            font-size: 25px;
+        }
+    }
+
+    .exp {
+        @include margin-auto;
+        width: 840px;
+        @include flex;
+        justify-content: space-between !important;
+        margin-top: 70px;
+
+        p {
+            display: flex;
+            flex-wrap: wrap;
+            width: 300px;
+            font-size: 14px;
+            font-family: $poppins;
+            line-height: 1.7;
+            border-left: solid 1px $secondary-alt;
+            padding-left: 5px;
+        }
+    }
+
+    @include media("<lg") {
+        .info-right {
+            margin-right: 8px;
+            padding: 5px 20px;
+            span {
+                font-size: 14px;
+            }
+            em {
+                font-size: 18px;
+            }
+        }
+        .me {
+            width: 630px;
+            .info-left {
+                .one {
+                    font-size: 16px;
+                }
+                .two {
+                    font-size: 21px;
+                }
+            }
+        }
+        .job {
+            width: 750px;
+
+            p {
+                font-size: 20px;
+            }
+        }
+        .exp {
+            width: 700px;
+            p {
+                width: 240px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    @include media("<tablet") {
+        .info-right {
+            margin-right: 50px;
+            span {
+                font-size: 12px;
+            }
+            em {
+                font-size: 14px;
+            }
+        }
+
+        .me {
+            width: 569px;
+            .info-left {
+                margin-left: 50px;
+                .one {
+                    font-size: 14px;
+                }
+                .two {
+                    font-size: 16px;
+                }
+            }
+        }
+        .job {
+            width: 640px;
+            margin-top: 10px;
+            p {
+                font-size: 16px;
+                margin-left: 50px;
+            }
+        }
+        .exp {
+            width: 615px;
+            margin-top: 10px;
+            p {
+                width: 170px;
+                font-size: 10px;
+                margin-left: 50px;
+            }
+        }
+    }
+
+    @include media("<phone") {
+        .info-right {
+            margin-right: 50px;
+            padding: 5px 10px;
+            span {
+                font-size: 10px;
+            }
+            em {
+                font-size: 12px;
+            }
+        }
+
+        .me {
+            width: 440px;
+            .info-left {
+                margin-left: 50px;
+                .one {
+                    font-size: 10px;
+                }
+                .two {
+                    font-size: 12px;
+                }
+            }
+        }
+        .job {
+            width: 511px;
+            margin-top: 10px;
+            p {
+                font-size: 12px;
+                margin-left: 60px;
+            }
+        }
+        .exp {
+            width: 590px;
+            margin-top: 10px;
+            .info-right {
+                margin-right: 100px;
+            }
+            p {
+                width: 170px;
+                font-size: 9px;
+                margin-left: 100px;
+            }
+        }
+    }
+}

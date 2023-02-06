@@ -1,0 +1,14 @@
+@import "./sass/_variables";
+@import "./sass/fonts";
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: $primary !important;
+    font-family: "Poppins", sans-serif;
+    counter-set: rank;
+}

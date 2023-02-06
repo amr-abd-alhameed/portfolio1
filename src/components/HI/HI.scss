@@ -1,0 +1,88 @@
+@import "../../sass/mixins";
+@import "../../sass/fonts";
+@import "../../sass/variables";
+@import "../../sass/breakPoints";
+.HI {
+    background-image: url(../../assets/images/pexels-henry-&-co-1939485.jpg);
+    background-size: cover;
+    position: relative;
+    height: 510px;
+    @include flex;
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+    .all {
+        @include flex;
+        flex-direction: column;
+        border-radius: 50%;
+        border: solid 1px $primary;
+        @include margin-auto;
+        width: 370px;
+        height: 370px;
+        gap: 30px;
+
+        h2 {
+            font-family: $volkhov;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+        p {
+            font-family: $poppins;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .icons {
+            a {
+                left: 48%;
+            }
+            .one {
+                transform: translate(0px, 10px);
+            }
+
+            .two {
+                transform: translate(-70px, 10px);
+            }
+
+            .three {
+                transform: translate(70px, 10px);
+            }
+            .four {
+                transform: translate(0px, 0px);
+                display: none;
+            }
+            a:hover {
+                border-color: $primary;
+            }
+        }
+    }
+    @include media("<lg") {
+        .icons {
+            a {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                left: 46%;
+            }
+        }
+    }
+    @include media("<tablet") {
+        .icons {
+            a {
+                width: 45px;
+                height: 45px;
+                font-size: 19px;
+                left: 45%;
+            }
+        }
+    }
+    @include media("<phone") {
+        .icons {
+            a {
+                width: 45px;
+                height: 45px;
+                font-size: 19px;
+            }
+        }
+    }
+}

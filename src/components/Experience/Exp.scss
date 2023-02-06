@@ -1,0 +1,35 @@
+@import "../../sass/_mixins.scss";
+@import "../../sass/variables";
+@import "../../sass/breakPoints";
+
+.section {
+    // height: 100vh;
+    @include padding;
+    padding-bottom: 0px;
+    .call {
+        margin-top: 80px;
+        position: relative;
+        .ons {
+            width: 2px;
+            background-color: $secondary;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    @include media("<phone") {
+        .call {
+            display: flex;
+            flex-direction: column;
+            padding-top: 30px;
+            gap: 30px;
+
+            .ons {
+                display: none;
+            }
+        }
+    }
+}

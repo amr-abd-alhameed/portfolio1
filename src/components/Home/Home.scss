@@ -1,0 +1,77 @@
+@import "../../sass/variables";
+@import "../../sass/breakPoints";
+@import "../../sass/mixins";
+.home {
+    height: calc(100vh - 100px);
+    background-color: inherit;
+    @include flex;
+    overflow: hidden;
+
+    .container {
+        @include flex;
+        position: relative;
+        .rings {
+            position: relative;
+            @include flex;
+
+            .one {
+                @include position;
+                width: 450px;
+                height: 450px;
+                border: solid 1px #f4f4f4;
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .two {
+                @include position;
+                width: 350px;
+                transform: translate(-50%, -50%);
+            }
+
+            .three {
+                @include position;
+                width: 434px;
+
+                transform: translate(-47%, -50%);
+            }
+
+            @include media("<lg") {
+                .one {
+                    width: 300px;
+                    height: 300px;
+                }
+                .two {
+                    width: 200px;
+                }
+                .three {
+                    width: 284px;
+                }
+            }
+            @include media("<phone") {
+                .one {
+                    width: 150px;
+                    height: 150px;
+                }
+                .two {
+                    width: 110px;
+                }
+                .three {
+                    width: 160px;
+                }
+            }
+            @include media(">phone", "<tablet") {
+                .one {
+                    width: 200px;
+                    height: 200px;
+                }
+                .two {
+                    width: 150px;
+                }
+                .three {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}

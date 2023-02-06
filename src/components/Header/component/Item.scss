@@ -1,0 +1,51 @@
+@import "../../../sass/fonts";
+@import "../../../sass/variables";
+@import "../../../sass/breakPoints";
+
+.link {
+    a,
+    .span {
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: $poppins;
+        margin: 0px 1rem;
+        color: $secondary;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    @include media("<lg") {
+        & {
+            padding: 10px 0;
+            width: fit-content;
+            margin: 0px auto;
+            cursor: pointer;
+            &:hover a {
+                color: $secondary;
+                background-color: $primary;
+                padding: 5px;
+                border-radius: 6px;
+            }
+            &:hover .span {
+                color: $secondary;
+                background-color: $primary;
+                padding: 5px;
+                border-radius: 6px;
+            }
+            // a,
+            // .span {
+            //     // font-weight: 400px;
+            // }
+            a {
+                color: $primary;
+                font-weight: 400 !important;
+            }
+            .span {
+                color: $primary;
+                margin: 0px auto;
+                font-weight: 900;
+                font-size: 20px;
+            }
+        }
+    }
+}

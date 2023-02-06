@@ -1,0 +1,55 @@
+@import "../../../sass/variables";
+@import "../../../sass/fonts";
+@import "../../../sass/breakPoints";
+
+.CardIII {
+    background-color: inherit;
+    padding: 20px;
+    font-family: $poppins;
+    text-transform: capitalize;
+    width: 43%;
+
+    h2,
+    p {
+        color: $secondary;
+        margin-bottom: 5px;
+    }
+
+    span {
+        color: $secondary-alt;
+    }
+
+    @include media("<lg") {
+        h2 {
+            font-size: 26px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    @include media("<lg") {
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 16px;
+        }
+        span {
+            font-size: 14;
+        }
+    }
+
+    @include media("<phone") {
+        & {
+            width: 100%;
+            text-align: center;
+
+            h2 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
