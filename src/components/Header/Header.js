@@ -1,4 +1,5 @@
-import "./Header.scss";import logo from "../../../src/assets/images/download (1).png";
+import "./Header.scss";
+import logo from "../../../src/assets/images/download (1).png";
 import { Item } from "./component/Item";
 import { Button } from "../common/index";
 import { HiViewList } from "react-icons/hi";
@@ -35,7 +36,7 @@ const Header = () => {
           >
             <ul className="d-lg-flex">
               <Item hash={"/"} name={"home"} icon={HiViewList} />
-              <Item hash={"/home"} name={"home"} icon={HiViewList} />
+              <Item hash={"about"} name={"about"} icon={HiViewList} />
               <Item hash={"/home"} name={"home"} icon={HiViewList} />
               <Item hash={"/home"} name={"home"} icon={HiViewList} />
               <Item hash={"/home"} name={"home"} icon={HiViewList} />
