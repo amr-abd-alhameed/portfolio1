@@ -1,6 +1,5 @@
-import "./Header.scss";
-import logo from "../../../src/assets/images/download (1).png";
-import { Item } from "./component/Item";
+import "./Header.scss";import logo from "../../../src/assets/images/download (1).png";
+import { Links } from "./component/Item";
 import { Button } from "../common/index";
 import { HiViewList } from "react-icons/hi";
 
@@ -28,52 +27,9 @@ const Header = () => {
         className="header  d-flex justify-content-between align-items-center"
       >
         <div className="logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Logo" />
         </div>
-        <div className="tap">
-          <div
-            className={`min d-none d-lg-flex ${Open ? "active" : "inactive"}`}
-          >
-            <ul className="d-lg-flex">
-              <Item hash={"/"} name={"home"} icon={HiViewList} />
-              <Item hash={"about"} name={"about"} icon={HiViewList} />
-              <Item hash={"/home"} name={"home"} icon={HiViewList} />
-              <Item hash={"/home"} name={"home"} icon={HiViewList} />
-              <Item hash={"/home"} name={"home"} icon={HiViewList} />
-              <Item hash={"/home"} name={"home"} icon={HiViewList} />
-            </ul>
-          </div>
-        </div>
-        {/* <div
-                    className={`min d-none d-lg-flex ${
-                        Open ? "active" : "inactive"
-                    }`}
-                >
-                    <ul className="d-lg-flex">
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                    </ul>
-                </div> */}
-
-        {/* <div
-                    className={`min d-none d-lg-flex ${
-                        Open ? "active" : "inactive"
-                    }`}
-                >
-                    <ul className="d-lg-flex">
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                        <Item hash={"/home"} name={"home"} icon={HiViewList} />
-                    </ul>
-                </div> */}
-
+        <Links />
         <Button
           className="button d-none d-lg-flex"
           style={{ fontSize: "14px", padding: "5px 30px" }}

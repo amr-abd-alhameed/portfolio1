@@ -1,4 +1,5 @@
-import "./Projects.scss";import { useState } from "react";
+import "./Projects.scss";
+import { useState } from "react";
 import items from "./component/data";
 import Menu from "./component/Menu";
 import Categories from "./component/Categories";
@@ -36,7 +37,7 @@ const Projects = () => {
 
   return (
     <>
-      <section className="Projects">
+      <section className="Projects" id="projects">
         <div className="container">
           <HeadLine>recent projects</HeadLine>
           <Categories

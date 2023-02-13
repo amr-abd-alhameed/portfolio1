@@ -1,5 +1,4 @@
-import "./Home.scss";
-import circle from "../../../src/assets/images/circle-512.png";
+import "./Home.scss";import circle from "../../../src/assets/images/circle-512.png";
 import man from "../../../src/assets/images/men-suit-png-9471.png";
 
 import Text from "./component/Text";
@@ -8,7 +7,7 @@ import Icons from "./component/Icons";
 const Home = () => {
   return (
     <>
-      <section className="home">
+      <section className="home" id="home">
         <div className="container">
           <div className="rings">
             <span className="one"></span>
