@@ -1,12 +1,4 @@
-// import styled from "styled-components";
-// const Button = styled.button`
-//     background: ${(props) => props.color};
-//     border-radius: 3px;
-//     border: 2px solid palevioletred;
-//     color: ${(props) => (props.cute ? "black" : "#0cc")};
-//     /* color: ${(props) => (props.color === "white" ? "black" : "green")}; */
-//     margin: 0 1em;
-//     padding: 0.25em 1em;
+// import styled from "styled-components";// const Button = styled.button`//     background: ${(props) => props.color};//     border-radius: 3px;//     border: 2px solid palevioletred;//     color: ${(props) => (props.cute ? "black" : "#0cc")};//     /* color: ${(props) => (props.color === "white" ? "black" : "green")}; *///     margin: 0 1em;//     padding: 0.25em 1em;
 // `;
 // const P = styled.p`
 //     text-align: center;
@@ -22,21 +14,26 @@
 // export { P, Button };
 import styled from "styled-components";
 
-const Button = styled.button`
-    background-color: ${(props) =>
-        props.dark ? props.theme.$secondary : props.theme.$primary};
+const Button = styled.a`
+  background-color: ${(props) =>
+    props.dark ? props.theme.$secondary : props.theme.$primary};
+  color: ${(props) =>
+    props.dark ? props.theme.$primary : props.theme.$secondary};
+  font-family: "poppins";
+  font-size: 20px;
+  padding: 10px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  &:hover {
     color: ${(props) =>
-        props.dark ? props.theme.$primary : props.theme.$secondary};
-    font-family: "poppins";
-    font-size: 20px;
-    padding: 10px 40px;
-    border-radius: 40px;
-    border: solid 2px
-        ${(props) =>
-            props.dark ? props.theme.$primary : props.theme.$secondary};
+      props.dark ? props.theme.$primary : props.theme.$secondary};
+  }
+  cursor: pointer;
+  border: solid 2px
+    ${(props) => (props.dark ? props.theme.$primary : props.theme.$secondary)};
 `;
 
 const BigBtn = styled(Button)`
-    font-weight: 500;
+  font-weight: 500;
 `;
 export { Button, BigBtn };

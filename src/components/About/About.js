@@ -21,8 +21,15 @@ const About = () => {
             </P>
           </div>
           <div className="three">
-            <BigBtn dark>contact me</BigBtn>
-            <BigBtn>download cv</BigBtn>
+            <BigBtn href="mailto:amrabdalhameed947@gmail.com" dark>
+              contact me
+            </BigBtn>
+            <BigBtn
+              href="https://www.mediafire.com/file/fdhkhb0wtj1m27p/resume.docx/file"
+              target="_blank"
+            >
+              download cv
+            </BigBtn>
           </div>
 
           {/* <HeadLine name="about" />

@@ -1,4 +1,5 @@
-import "./Header.scss";import logo from "../../../src/assets/images/download (1).png";
+import "./Header.scss";
+import logo from "../../../src/assets/images/download (1).png";
 import { Links } from "./component/Item";
 import { Button } from "../common/index";
 import { HiViewList } from "react-icons/hi";
@@ -33,6 +34,7 @@ const Header = () => {
         <Button
           className="button d-none d-lg-flex"
           style={{ fontSize: "14px", padding: "5px 30px" }}
+          href="mailto:amrabdalhameed947@gmail.com"
         >
           contact
         </Button>

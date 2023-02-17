@@ -1,4 +1,5 @@
-import "./Contact.scss";import { HeadLine, P, BigBtn } from "../common/index";
+import "./Contact.scss";
+import { HeadLine, P, BigBtn } from "../common/index";
 import Man from "../..//assets/images/men-suit-png-9471.png";
 
 const Contact = () => {
@@ -12,7 +13,7 @@ const Contact = () => {
             let's make something new, different and more meaningful or make
             thing more visual or conceptual
           </P>
-          <BigBtn> contact me</BigBtn>
+          <BigBtn href="mailto:amrabdalhameed947@gmail.com"> contact me</BigBtn>
         </div>
       </section>
     </>
