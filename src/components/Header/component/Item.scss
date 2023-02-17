@@ -1,5 +1,4 @@
-@import "../../../sass/fonts";
-@import "../../../sass/variables";
+@import "../../../sass/fonts";@import "../../../sass/variables";
 @import "../../../sass/breakPoints";
 
 ul {
@@ -88,7 +87,9 @@ ul {
       }
       span {
         color: white;
-        font-size: 38px;
+        // font-size: 38px;
+        font-size: 23px !important;
+
         margin-right: 15px;
         align-items: center;
         display: flex;

@@ -1,4 +1,5 @@
-import "./Item.scss";import React from "react";
+import "./Item.scss";
+import React from "react";
 import { FaHome } from "react-icons/fa";
 import { FaBuysellads } from "react-icons/fa";
 import { MdAccountBalance } from "react-icons/md";
@@ -6,9 +7,9 @@ import { MdAccountBox } from "react-icons/md";
 import { SiProtondb } from "react-icons/si";
 import { MdAutoAwesomeMosaic } from "react-icons/md";
 
-const Links = (props) => {
+const Links = ({ Open }) => {
   return (
-    <ul className="d-none d-lg-flex">
+    <ul className={` d-none d-lg-flex ${Open ? "active" : "inactive"}`}>
       <li>
         <span className=" d-lg-none">
           <FaHome />
