@@ -14,7 +14,7 @@ const Links = ({ Open }) => {
         <span className=" d-lg-none">
           <FaHome />
         </span>
-        <a href="/">home</a>
+        <a href="#home">home</a>
       </li>
       <li>
         <span className=" d-lg-none">
