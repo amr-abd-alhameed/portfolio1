@@ -13,22 +13,38 @@ const Exp = () => {
           <span className="ons"></span>
 
           <Collector revers>
-            <Card color="white">hi gays I'm happy that i am with you</Card>
+            <Card color="white">
+              kalponian almarsos was a very interesting adventure in programming{" "}
+              <br />
+              • Learn programming fundamentals <br />• The basics of OOB, Data
+              Structure , Algorithms
+              <br />• APIs and Web Services
+              <br />• Create Professional Web Apps
+            </Card>
             <CardIII
               title="frontEnd developer"
               company="kalponian almarsos "
-              start="2022"
-              end="present"
+              start="Apr 2022"
+              end="Nov 2022"
             ></CardIII>
           </Collector>
           <Collector black>
             <CardIII
               title="frontEnd developer"
               company="Fiver "
-              start="2022"
+              start="Nov 2022"
               end="present"
             ></CardIII>
-            <CardII> hi gays I'm happy that i am with you</CardII>
+            <CardII>
+              {" "}
+              • Building stable and maintainable codebases using JavaScript and
+              React.js.
+              <br />
+              • Implementing a mobile-first approach to existing websites.
+              <br />• Creating modular, responsive templates using modern CSS
+              techniques and JavaScript libraries
+              <br />• Leveraging responsive web frameworks
+            </CardII>
           </Collector>
         </div>
       </section>
