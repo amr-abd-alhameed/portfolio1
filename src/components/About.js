@@ -1,4 +1,4 @@
-import "./About.scss";import { HeadLine, P, BigBtn, OverLay } from "../common/index";
+import "../sass/About.scss";import { HeadLine, P, BigBtn, OverLay } from "./common/index";
 
 const About = () => {
   return (
