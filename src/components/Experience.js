@@ -1,11 +1,10 @@
-import "./Exp.scss";
-import { Card, CardII } from "./component/Card";
-import CardIII from "./component/CardIII";
-import Collector from "./component/Collector";
+import "../sass/Experience.scss";//import { Card, CardII } from "./component/Card";
+// import CardIII from "./component/CardIII";
+// import Collector from "./component/Collector";
 
-import { HeadLine } from "../common";
+import { Card, CardII, CardIII, Collector, HeadLine } from "./common";
 
-const Exp = () => {
+const Experience = () => {
   return (
     <>
       <section className="section" id="experience">
@@ -53,4 +52,4 @@ const Exp = () => {
   );
 };
 
-export default Exp;
+export default Experience;

@@ -1,4 +1,5 @@
-import "./CardIII.scss";import React from "react";
+import "../../sass/CardIII.scss";
+import React from "react";
 
 const CardIII = (props) => {
   return (
