@@ -1,4 +1,5 @@
-export { default as P } from "./Paragraph";export { default as HeadLine } from "./HeadLine";
+export { default as P } from "./Paragraph";
+export { default as HeadLine } from "./HeadLine";
 export { Button, BigBtn } from "./Button";
 export { default as theme } from "./Styles";
 export { default as OverLay } from "./OverLay";
@@ -8,3 +9,6 @@ export { default as Collector } from "./Collector";
 export { default as CardIII } from "./CardIII";
 export { default as Icons } from "./Icons";
 export { default as Text } from "./Text";
+export { default as Menu } from "./Menu";
+export { default as data } from "./data";
+export { default as Categories } from "./Categories";

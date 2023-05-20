@@ -1,9 +1,7 @@
-import "./Projects.scss";
-import { useState } from "react";
-import items from "./component/data";
-import Menu from "./component/Menu";
-import Categories from "./component/Categories";
-import { HeadLine } from "../common";
+import "../sass/Projects.scss";import { useState } from "react";
+import items from "./common/data";
+
+import { Categories, HeadLine, Menu } from "./common";
 
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
