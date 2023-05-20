@@ -1,4 +1,4 @@
-import "./Item.scss";
+import "../../sass/Links.scss";
 import React from "react";
 import { FaHome } from "react-icons/fa";
 import { FaBuysellads } from "react-icons/fa";
@@ -44,4 +44,4 @@ const Links = ({ Open }) => {
   );
 };
 
-export { Links };
+export default Links;

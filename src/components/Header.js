@@ -1,6 +1,6 @@
-import "./Header.scss";import logo from "../../../src/assets/images/download (1).png";
-import { Links } from "./component/Item";
-import { Button } from "../common/index";
+import "../sass/Header.scss";
+import logo from "../assets/images/download (1).png";
+import { Button, Links } from "./common/index";
 import { HiViewList } from "react-icons/hi";
 
 import { useState, useEffect, useRef } from "react";
