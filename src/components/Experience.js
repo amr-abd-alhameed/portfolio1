@@ -1,5 +1,4 @@
-import "../sass/Experience.scss";
-import { Card, CardII, CardIII, Collector, HeadLine } from "./common";
+import "../sass/Experience.scss";import { Card, CardII, CardIII, Collector, HeadLine } from "./common/index";
 
 const Experience = () => {
   return (
