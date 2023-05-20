@@ -1,7 +1,4 @@
-import "../sass/Experience.scss";//import { Card, CardII } from "./component/Card";
-// import CardIII from "./component/CardIII";
-// import Collector from "./component/Collector";
-
+import "../sass/Experience.scss";
 import { Card, CardII, CardIII, Collector, HeadLine } from "./common";
 
 const Experience = () => {

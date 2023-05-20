@@ -1,5 +1,6 @@
-@import "../../sass/variables";@import "../../sass/breakPoints";
-@import "../../sass/mixins";
+@import "./variables";
+@import "./breakPoints";
+@import "./mixins";
 .home {
   height: calc(100vh - 100px);
   background-color: inherit;

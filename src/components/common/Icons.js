@@ -1,4 +1,5 @@
-import "./Icons.scss";import { FaLinkedinIn, FaGithub, FaFacebookF } from "react-icons/fa";
+import "../../sass/Icons.scss";
+import { FaLinkedinIn, FaGithub, FaFacebookF } from "react-icons/fa";
 import { SiIndeed } from "react-icons/si";
 
 const Icons = () => {
