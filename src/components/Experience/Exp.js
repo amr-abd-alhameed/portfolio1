@@ -1,4 +1,5 @@
-import "./Exp.scss";import { Card, CardII } from "./component/Card";
+import "./Exp.scss";
+import { Card, CardII } from "./component/Card";
 import CardIII from "./component/CardIII";
 import Collector from "./component/Collector";
 
@@ -26,7 +27,7 @@ const Exp = () => {
               company="kalponian almarsos "
               start="Apr 2022"
               end="Nov 2022"
-            ></CardIII>
+            />
           </Collector>
           <Collector black>
             <CardIII
@@ -34,10 +35,10 @@ const Exp = () => {
               company="Fiver "
               start="Nov 2022"
               end="present"
-            ></CardIII>
+            />
             <CardII>
               {" "}
-              • Building stable and maintainable codebases using JavaScript and
+              • Building stable and maintainable codebase using JavaScript and
               React.js.
               <br />
               • Implementing a mobile-first approach to existing websites.

@@ -18,7 +18,6 @@ const Links = ({ Open }) => {
       </li>
       <li>
         <span className=" d-lg-none">
-          {" "}
           <FaBuysellads />
         </span>
         <a href="#about">about</a>
@@ -42,11 +41,6 @@ const Links = ({ Open }) => {
         <a href="#contact">contact</a>
       </li>
     </ul>
-
-    // <li className="link">
-    //   <span className="span d-lg-none">{<props.icon />}</span>
-    //   <a href={`#${props.hash}`}>{props.name}</a>
-    // </li>
   );
 };
 
