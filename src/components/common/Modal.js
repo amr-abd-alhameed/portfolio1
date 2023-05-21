@@ -1,8 +1,9 @@
-import { motion } from "framer-motion";import "../../sass/Modal.scss";
+import { motion } from "framer-motion";
+import "../../sass/Modal.scss";
 import BackDrop from "./BackDrop";
 import { BsArrowBarLeft } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
-import logo from "../../assets/images/amr2.jpg";
+import logo from "../../assets/images/amr2.png";
 
 const dropIn = {
   hidden: {
@@ -25,7 +26,8 @@ const dropIn = {
   },
 };
 
-const Modal = ({ handleClose, text }) => {
+const Modal = ({ handleClose, src }) => {
+  console.log(src + "from modal");
   return (
     <BackDrop onClick={handleClose}>
       <motion.div
@@ -49,7 +51,7 @@ const Modal = ({ handleClose, text }) => {
         </div>
         <div className="d-flex justify-content-between align-items-center">
           <div className="col-7">
-            <img src={logo} alt="site " className="img-fluid" />
+            <img src={src} alt="site " className="img-fluid" />
           </div>
           <div className="d-flex flex-column justify-content-start col-5 ">
             <h2 className="text-uppercase">Site name</h2>
