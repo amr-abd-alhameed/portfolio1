@@ -1,0 +1,11 @@
+.Modal {
+  width: clamp(50%, 1000px, 90%);
+  //   height: min(50%, 300px);
+  height: 600px;
+  margin: auto;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}

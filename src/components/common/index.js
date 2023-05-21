@@ -12,3 +12,5 @@ export { default as Text } from "./Text";
 export { default as Menu } from "./Menu";
 export { default as data } from "./data";
 export { default as Categories } from "./Categories";
+export { default as BackDrop } from "./BackDrop";
+export { default as Modal } from "./Modal";
