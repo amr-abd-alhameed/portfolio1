@@ -9,11 +9,25 @@
   div {
     padding: 0px;
   }
-
+  .img-handler {
+    // overflow: hidden;
+    position: relative;
+  }
+  .acc {
+    // right: 20px !important;
+    // color: aquamarine !important;
+    // display: flex !important;
+  }
   img {
     cursor: pointer;
     object-fit: cover;
     border-radius: 1rem;
     max-width: 95%;
+  }
+  .onon {
+    // position: absolute;
+    // top: 12%;
+    // right: -8000px;
+    // display: none !important;
   }
 }
