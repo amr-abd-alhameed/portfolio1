@@ -1,4 +1,6 @@
-import "../../sass/Categories.scss";const Categories = ({ filterItems, categories, addingClass }) => {
+import { Link, NavLink } from "react-router-dom";
+import "../../sass/Categories.scss";
+const Categories = ({ filterItems, categories, addingClass }) => {
   return (
     <>
       <div className="buttons">

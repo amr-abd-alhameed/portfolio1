@@ -1,5 +1,4 @@
-import amr0 from "../../assets/images/amr0.png";
-import amr1 from "../../assets/images/amr1.png";
+import amr0 from "../../assets/images/amr0.png";import amr1 from "../../assets/images/amr1.png";
 import amr2 from "../../assets/images/amr2.png";
 import amr3 from "../../assets/images/amr3.png";
 import amr4 from "../../assets/images/amr4.png";
@@ -12,10 +11,34 @@ const menu = [
     id: 1,
     src: amr0,
     alt: "it's a photo",
-    title: "the name of project",
+    title: "imdb clone",
     category: "react",
     description: "the project based on React",
     activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/IMDB-CLONE/",
+    demo: "https://github.com/amr-abd-alhameed/IMDB-CLONE",
+    tech: [
+      {
+        html: "html",
+        css: "css",
+        scss: "scss",
+        bootstrap: "bootstrap",
+        tailwind: "tailwind",
+        js: "javascript",
+        react: "react",
+        redux: "redux",
+        reduxToolkit: "redux Toolkit",
+        framerMotion: "framer Motion",
+        hooks: "hooks",
+        reactSkeleton: "react Skeleton",
+        carousel: "carousel",
+        reactRouter: "react Router",
+        marquee: "marquee",
+        reactIcons: "react Icons",
+        reactImageZoom: "react-Image-Zoom",
+        styledComponent: "styled Component",
+      },
+    ],
   },
   {
     id: 2,
@@ -25,6 +48,9 @@ const menu = [
     category: "react",
     description: "the project based on React",
     activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/ToDoApp/",
+    demo: "https://github.com/amr-abd-alhameed/ToDoApp",
+    tech: "",
   },
   {
     id: 3,
@@ -34,6 +60,9 @@ const menu = [
     category: "js react",
     description: "the project based on React",
     activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/e-commerce-app/",
+    demo: "https://github.com/amr-abd-alhameed/e-commerce-app",
+    tech: "",
   },
   {
     id: 4,
@@ -43,6 +72,9 @@ const menu = [
     category: "js",
     description: "the project based on React",
     activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/portfolio1/",
+    demo: "https://github.com/amr-abd-alhameed/portfolio1",
+    tech: "",
   },
   {
     id: 5,
@@ -52,6 +84,9 @@ const menu = [
     category: "js",
     description: "the project based on React",
     activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/dashBoard/",
+    demo: "https://github.com/amr-abd-alhameed/dashBoard",
+    tech: "",
   },
   {
     id: 6,
@@ -61,6 +96,9 @@ const menu = [
     category: "react",
     description: "the project based on React",
     activeObject: null,
+    live: "",
+    demo: "",
+    tech: "",
   },
   {
     id: 7,
@@ -70,6 +108,8 @@ const menu = [
     category: "js",
     description: "the project based on React",
     activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/Leon-Templet/",
+    demo: "https://github.com/amr-abd-alhameed/Leon-Templet/settings/pages",
   },
   {
     id: 8,
@@ -79,6 +119,9 @@ const menu = [
     category: "js",
     description: "the project based on React",
     activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/QuizApp/",
+    demo: "https://github.com/amr-abd-alhameed/QuizApp",
+    tech: "",
   },
 ];
 export default menu;

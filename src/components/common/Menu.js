@@ -119,7 +119,9 @@ function Menu({ items }) {
                           <BackDrop key={item.id}>
                             <Modal
                               key={item.id}
-                              src={item.src}
+                              // src={item.src}
+                              // title={item.title}
+                              item={item}
                               handleClose={Close}
                             />
                           </BackDrop>

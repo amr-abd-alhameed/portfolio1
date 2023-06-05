@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import "../../sass/Modal.scss";
+import { motion } from "framer-motion";import "../../sass/Modal.scss";
 import BackDrop from "./BackDrop";
 import { BsArrowBarLeft } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
@@ -26,8 +25,8 @@ const dropIn = {
   },
 };
 
-const Modal = ({ handleClose, src }) => {
-  console.log(src + "from modal");
+const Modal = ({ handleClose, item }) => {
+  console.log(item + "from modal");
   return (
     <BackDrop onClick={handleClose}>
       <motion.div
@@ -51,16 +50,11 @@ const Modal = ({ handleClose, src }) => {
         </div>
         <div className="d-flex justify-content-between align-items-center">
           <div className="col-7">
-            <img src={src} alt="site " className="img-fluid" />
+            <img src={item.src} alt="site " className="img-fluid" />
           </div>
           <div className="d-flex flex-column justify-content-start col-5 ">
-            <h2 className="text-uppercase">Site name</h2>
-            <p className="text-secondary">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-              qui provident dolores voluptates rem cupiditate voluptas tempora
-              animi? Dolore id consequuntur officia impedit ratione iusto illo
-              quaerat mollitia magni! Harum.
-            </p>
+            <h2 className="text-uppercase">{item.title}</h2>
+            <p className="text-secondary">{item.description}</p>
             <div className="d-flex align-items-center justify-content-center flex-wrap gap-2 ">
               <span className="text-capitalize">html</span>
               <span className="text-capitalize">css</span>
