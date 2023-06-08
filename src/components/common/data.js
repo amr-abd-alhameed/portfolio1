@@ -1,4 +1,5 @@
-import amr0 from "../../assets/images/amr0.png";import amr00 from "../../assets/images/amr00.png";
+import amr0 from "../../assets/images/amr0.png";
+import amr00 from "../../assets/images/amr00.png";
 
 import amr1 from "../../assets/images/amr1.png";
 
@@ -122,7 +123,7 @@ const menu = [
     title: "dashboard",
     category: "react",
     description:
-      "landing page based on javascript , Features automatically changing wallpaper , save data in local storage, customize your theme ,responsive with all screens",
+      "advanced react admin dashboard application, features fully mobile responsive , customizable with many themes, dark mode and light mode, many pages, four apps and seven functional charts",
     activeObject: null,
     live: "https://amr-abd-alhameed.github.io/dashBoard/",
     demo: "https://github.com/amr-abd-alhameed/dashBoard",
