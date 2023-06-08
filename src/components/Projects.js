@@ -6,6 +6,8 @@ import { Categories, HeadLine, Menu } from "./common";
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 
 const Projects = () => {
+
+
   const [menuItems, setMenuItems] = useState(items);
   const [categories, setCategories] = useState(allCategories);
 

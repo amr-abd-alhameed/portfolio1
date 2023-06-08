@@ -1,5 +1,4 @@
-import "../../sass/Menu.scss";
-import { motion, AnimatePresence } from "framer-motion";
+import "../../sass/Menu.scss";import { motion, AnimatePresence } from "framer-motion";
 import menu from "../common/data";
 import React, { useState } from "react";
 import { BackDrop, Modal } from "./index";
@@ -110,7 +109,8 @@ function Menu({ items }) {
                   <AnimatePresence
                     key={src}
                     initial={false}
-                    exitBeforeEnter={true}
+                    // exitBeforeEnter={true}
+                    mode="wait"
                     onExitComplete={() => null}
                   >
                     {open &&
