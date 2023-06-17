@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";import "../../sass/Modal.scss";
+import { motion } from "framer-motion";
+import "../../sass/Modal.scss";
 import BackDrop from "./BackDrop";
 import { BsArrowBarLeft, BsGithub } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
@@ -56,8 +57,8 @@ const Modal = ({ handleClose, item }) => {
             <GrClose />
           </p>
         </div>
-        <div className="d-flex justify-content-between ">
-          <div className="col-7">
+        <div className="d-flex justify-content-between flex-md-row  flex-column">
+          <div className="col-12 col-md-7">
             <div className="wrapper">
               {item.src2 ? (
                 <img src={item.src2} alt="site " className="img-fluid" />
@@ -67,12 +68,14 @@ const Modal = ({ handleClose, item }) => {
               {/* <img src={item.src} alt="site " className="img-fluid" /> */}
             </div>
           </div>
-          <div className="d-flex flex-column  col-5 p-2 ">
-            <h2 className="text-uppercase mt-2 ">{item.title}</h2>
-            <p className="text-secondary mt-2">{item.description}</p>
+          <div className="d-flex flex-column text-md-start text-center col-12 col-md-5 p-2 ">
+            <h2 className="text-uppercase mt-2">{item.title}</h2>
+            <p className="text-secondary mt-md-2 mt-0 mb-md-4 mb-2">
+              {item.description}
+            </p>
             <h3>Tech Used</h3>
             <div
-              className="d-flex  flex-wrap gap-2 mt-3 "
+              className="d-flex tech  flex-wrap gap-2 mt-md-3 mt-1 justify-content-center justify-content-md-start "
               style={{ fontWeight: "500" }}
             >
               {item.tech.map((ele, index) => {
@@ -83,7 +86,7 @@ const Modal = ({ handleClose, item }) => {
                 );
               })}
             </div>
-            <div className="d-flex align-items-center  gap-4 mt-5">
+            <div className="d-flex align-items-center justify-content-center justify-content-md-start gap-4 mt-md-5 mt-2">
               <a
                 href={item.live}
                 target="_blank"
