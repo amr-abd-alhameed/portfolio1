@@ -3,7 +3,7 @@ import "../../sass/Categories.scss";
 const Categories = ({ filterItems, categories, addingClass }) => {
   return (
     <>
-      <div className="buttons">
+      <div className="buttons text-capitalize">
         <button className="bio" onClick={() => filterItems("all")}>
           all
         </button>
@@ -12,6 +12,9 @@ const Categories = ({ filterItems, categories, addingClass }) => {
         </button>
         <button className="bio" onClick={() => filterItems("react")}>
           react
+        </button>
+        <button className="bio" onClick={() => filterItems("next")}>
+          Next
         </button>
       </div>
     </>

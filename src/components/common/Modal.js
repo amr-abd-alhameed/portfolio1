@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import "../../sass/Modal.scss";
+import { motion } from "framer-motion";import "../../sass/Modal.scss";
 import BackDrop from "./BackDrop";
 import { BsArrowBarLeft, BsGithub } from "react-icons/bs";
 import { GrClose } from "react-icons/gr";
@@ -61,9 +60,19 @@ const Modal = ({ handleClose, item }) => {
           <div className="col-12 col-md-7">
             <div className="wrapper">
               {item.src2 ? (
-                <img src={item.src2} alt="site " className="img-fluid" />
+                <img
+                  src={item.src2}
+                  loading="lazy"
+                  alt="site "
+                  className="img-fluid"
+                />
               ) : (
-                <img src={item.src} alt="site " className="img-fluid" />
+                <img
+                  src={item.src}
+                  loading="lazy"
+                  alt="site "
+                  className="img-fluid"
+                />
               )}
               {/* <img src={item.src} alt="site " className="img-fluid" /> */}
             </div>

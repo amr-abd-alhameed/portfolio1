@@ -1,5 +1,4 @@
-import "../sass/Header.scss";
-import logo from "../assets/images/download (1).png";
+import "../sass/Header.scss";import logo from "../assets/images/download (1).png";
 import { Button, Links } from "./common/index";
 import { HiViewList } from "react-icons/hi";
 
@@ -27,7 +26,7 @@ const Header = () => {
         className="header  d-flex justify-content-between align-items-center"
       >
         <div className="logo">
-          <img src={logo} alt="Logo" />
+          <img src={logo} loading="lazy" alt="Logo" />
         </div>
         <Links Open={Open} />
         <Button

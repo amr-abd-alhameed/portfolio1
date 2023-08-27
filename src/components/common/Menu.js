@@ -1,4 +1,5 @@
-import "../../sass/Menu.scss";import { motion, AnimatePresence } from "framer-motion";
+import "../../sass/Menu.scss";
+import { motion, AnimatePresence } from "framer-motion";
 import menu from "../common/data";
 import React, { useState } from "react";
 import { BackDrop, Modal } from "./index";
@@ -103,6 +104,7 @@ function Menu({ items }) {
                       className="img-fluid"
                       src={src}
                       alt={alt}
+                      loading="lazy"
                       onClick={() => filterItems(id)}
                     />
                   </motion.div>
