@@ -1,23 +1,31 @@
-import amr0 from "../../assets/images/amr0.png";
-import amr00 from "../../assets/images/amr00.png";
+import amr0 from "../../assets/images/amr0.jpg";import amr00 from "../../assets/images/amr00.jpg";
 
-import amr1 from "../../assets/images/amr1.png";
+import amr1 from "../../assets/images/amr1.jpg";
 
-import amr2 from "../../assets/images/amr2.png";
-import amr22 from "../../assets/images/amr22.png";
+import amr2 from "../../assets/images/amr2.jpg";
+import amr22 from "../../assets/images/amr22.jpg";
 
-import amr3 from "../../assets/images/amr3.png";
-import amr33 from "../../assets/images/amr33.png";
+import amr3 from "../../assets/images/amr3.jpg";
+import amr33 from "../../assets/images/amr33.jpg";
 
-import amr4 from "../../assets/images/amr4.png";
-import amr44 from "../../assets/images/amr44.png";
+import amr4 from "../../assets/images/amr4.jpg";
+import amr44 from "../../assets/images/amr44.jpg";
 
-import amr5 from "../../assets/images/amr5.png";
+import amr5 from "../../assets/images/amr5.jpg";
 
-import amr6 from "../../assets/images/amr6.png";
-import amr66 from "../../assets/images/amr66.png";
+import amr6 from "../../assets/images/amr6.jpg";
+import amr66 from "../../assets/images/amr66.jpg";
 
-import amr7 from "../../assets/images/amr7.png";
+import amr7 from "../../assets/images/amr7.jpg";
+
+import amr8 from "../../assets/images/fylo1.jpg";
+import amr88 from "../../assets/images/fylo.jpg";
+
+import amr9 from "../../assets/images/topics1.jpg";
+import amr99 from "../../assets/images/topics.jpg";
+
+import amr10 from "../../assets/images/nike1.jpg";
+import amr1010 from "../../assets/images/nike.jpg";
 
 const menu = [
   {
@@ -139,6 +147,7 @@ const menu = [
       "syncfusion",
     ],
   },
+
   {
     id: 6,
     src: amr5,
@@ -191,6 +200,75 @@ const menu = [
       "javascript",
       "Ajax",
       "json",
+    ],
+  },
+  {
+    id: 8,
+    src: amr8,
+    src2: amr88,
+    alt: "it's a landing page",
+    title: "fylo",
+    category: "next",
+    description:
+      " this app allows users to discover the page, browse services, create contracts,meeting the team.",
+    activeObject: null,
+    live: "https://fylo-delta-ebon.vercel.app/",
+    demo: "https://github.com/amr-abd-alhameed/fylo",
+    tech: [
+      "html",
+      "css",
+      "tailwindCss",
+      "javaScript",
+      "hooks",
+      "postcss",
+      "react icons",
+      "next.js",
+    ],
+  },
+  {
+    id: 9,
+    src: amr9,
+    src2: amr99,
+    alt: "it's a landing page",
+    title: "topic",
+    category: "next",
+    description:
+      " this app allows users to discover three pages, browse services and sections, modern design,get in touch with all team.",
+    activeObject: null,
+    live: "https://fylo-delta-ebon.vercel.app/",
+    demo: "https://github.com/amr-abd-alhameed/Topic",
+    tech: [
+      "html",
+      "css",
+      "tailwindCss",
+      "javaScript",
+      "hooks",
+      "postcss",
+      "react icons",
+      "next.js",
+    ],
+  },
+  {
+    id: 10,
+    src: amr10,
+    src2: amr1010,
+    alt: "it's a landing page",
+    title: "nike",
+    category: "react",
+    description:
+      "advanced react Nike website, features fully mobile responsive ,  with complex hero section, many sections",
+    activeObject: null,
+    live: "https://amr-abd-alhameed.github.io/Nike/",
+    demo: "https://github.com/amr-abd-alhameed/Nike",
+    tech: [
+      "html",
+      "css",
+      "tailwind",
+      "js",
+      "react",
+      "hooks",
+      "react Router",
+      "react Icons",
     ],
   },
 ];

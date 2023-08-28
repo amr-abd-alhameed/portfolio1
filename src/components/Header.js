@@ -1,4 +1,5 @@
-import "../sass/Header.scss";import logo from "../assets/images/download (1).png";
+import "../sass/Header.scss";
+import logo from "../assets/images/download.jpg";
 import { Button, Links } from "./common/index";
 import { HiViewList } from "react-icons/hi";
 

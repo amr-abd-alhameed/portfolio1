@@ -1,5 +1,4 @@
-import "../sass/Contact.scss";
-import { HeadLine, P, BigBtn } from "./common/index";
+import "../sass/Contact.scss";import { HeadLine, P, BigBtn } from "./common/index";
 import Man from "../assets/images/men-suit-png-9471.png";
 
 const Contact = () => {

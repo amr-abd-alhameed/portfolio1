@@ -7,13 +7,15 @@ const About = () => {
         <OverLay />
         <div className="container">
           <HeadLine>about</HeadLine>
-          <div className="one">
+          <div className="one text-capitalize">
             <P>
-              I'm interested in coding and making beautiful WebApps and creating
-              dynamic WebSites
+              Frontend developer with +1 year of experience in building
+              responsive websites and web applications with HTML, CSS, SASS,
+              Bootstrap, tailwindCss, JavaScript, typeScript, ES6, git & GitHub,
+              redux, redux toolKit and working with React.js & Next.js
             </P>
           </div>
-          <div className="two">
+          <div className="two text-capitalize">
             <P>
               I'm interested in coding and making beautiful WebApps and creating
               dynamic WebSites and playing any thing in any thing in my head
@@ -25,7 +27,7 @@ const About = () => {
               contact me
             </BigBtn>
             <BigBtn
-              href="https://www.mediafire.com/file/fdhkhb0wtj1m27p/resume.docx/file"
+              href="https://www.mediafire.com/file/z4scmdxip6xgmk1/resume-amr.pdf/file"
               target="_blank"
             >
               download cv
