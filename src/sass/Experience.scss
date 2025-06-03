@@ -1,8 +1,9 @@
-@import "./_mixins.scss";@import "./variables";
+@import "./_mixins.scss";
+@import "./variables";
 @import "./breakPoints";
 
 .section {
-  // height: 100vh;
+  overflow: hidden; // height: 100vh;
   @include padding;
   padding-bottom: 0px;
   .call {
